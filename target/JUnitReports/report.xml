@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<testsuite errors="0" failures="1" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="1" time="1.07">
+    <testcase classname="feature to Verify //www.saucedemo.com/ login functionality login with username and password" name="2 Failed Login with LockedOutUser" time="0.946">
+        <failure message="expected:&lt;[Epic sadface: Sorry, this user has been locked out].&gt; but was:&lt;[Sorry, this user has been banned].&gt;" type="org.junit.ComparisonFailure"><![CDATA[Given I am on the Sauce Demo Login Page.....................................passed
+When I fill the account information for account LockedOutUser into the "locked_out_user" field and the "secret_sauce" field.passed
+And I click the Login Button................................................passed
+Then I verify the Error Message contains the text "Sorry, this user has been banned.".failed
+
+StackTrace:
+org.junit.ComparisonFailure: expected:<[Epic sadface: Sorry, this user has been locked out].> but was:<[Sorry, this user has been banned].>
+	at org.junit.Assert.assertEquals(Assert.java:117)
+	at org.junit.Assert.assertEquals(Assert.java:146)
+	at SwagLabsAutomation.LoginSwagLabSteps.i_verify_the_Error_Message_contains_the_text(LoginSwagLabSteps.java:57)
+	at ✽.I verify the Error Message contains the text "Sorry, this user has been banned."(file:///C:/Users/ahmet/IdeaProjects/CastleHill/src/test/resources/Features/LoginToSwagLabsSteps.feature:19)
+]]></failure>
+    </testcase>
+</testsuite>
